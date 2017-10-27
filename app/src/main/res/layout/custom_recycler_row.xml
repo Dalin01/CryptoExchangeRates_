@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/view_foreground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/ten_dp"
+        android:paddingRight="@dimen/ten_dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/ten_dp"
+            android:layout_marginLeft="@dimen/twenty_dp"
+            android:layout_marginRight="@dimen/twenty_dp"
+            android:layout_marginTop="@dimen/twenty_dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/name_of_currency"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="@dimen/ten_dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:padding="5dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    tool:text="USD" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/BTC"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:padding="5dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp"
+                            tool:text="BTC" />
+
+                        <TextView
+                            android:id="@+id/ETH"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:padding="5dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp"
+                            tool:text="ETH" />
+                    </LinearLayout>
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:id="@+id/profile_photo"
+                        android:layout_width="@dimen/seventy_dp"
+                        android:layout_height="@dimen/seventy_dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:padding="@dimen/one_dp"
+                        app:civ_border_color="@color/colorPrimary"
+                        app:civ_border_width="2.5dp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+
+</FrameLayout>
+
+
+
+
